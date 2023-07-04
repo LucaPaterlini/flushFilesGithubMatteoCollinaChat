@@ -20,8 +20,8 @@ jobs:
       with:
         go-version: 1.19
 
-    - name: Run server
-      run: go run server/main.go
+    - name: Run reader
+      run: go run writer/main.go
 
-    - name: Run client
-      run: go run server/client.go
+    - name: Run writer
+      run: go run reader/writer.go
