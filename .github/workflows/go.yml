@@ -24,4 +24,4 @@ jobs:
       run: go run writer/main.go
 
     - name: Run writer
-      run: go run reader/writer.go
+      run: go run reader/main.go
