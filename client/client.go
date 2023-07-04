@@ -18,7 +18,7 @@ func main() {
 	err := os.WriteFile(filePath, data, 0644)
 
 	// Communicate the file is ready for the read
-	resp, err := http.Get("http://localhost:8888?filename=foo.json")
+	resp, err := http.Get("http://localhost:8080?filename=foo.json")
 	if err != nil {
 		log.Fatalln(err)
 	}
